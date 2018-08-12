@@ -1,0 +1,83 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title> SignUp - StackOverflow-Lite </title>
+	<link rel="stylesheet" type="text/css" href="../public/stylesheets/signup.css">
+</head>
+<body>
+
+		<div id="content">
+			
+		<header>
+			<ul>
+				<span id="he_ader">
+				<li id="hea_der"><a href="index.html"> STACKOVERFLOW-LITE </a></li>
+				<li> 
+					<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="search">
+					<input type="submit">
+				</li>
+				</span>
+				<span id="head_er">
+				<li title="Home"> <a  id="home" href="index.html"> Home </a>  </li>
+				<li title="About"> <a  id="about" href="about.html"> About </a>  </li>
+	            <li title="Contact"> <a id="contact" href="contact.html"> Contact </a>  </li>  
+	            <li title="SignUp"> <a  id="sign" href="signup.html"> SignUp </a>  </li>
+	            <li title="LogIn"> <a id="log" href="login.html"> LogIn </a>  </li>   
+	            </span>   
+        	</ul>
+		</header>
+
+		<section id="text">
+			<form action="login.html" method="POST">
+
+			<h2> SignUp </h2>
+
+			 <div>
+              <label for="username">username</label><br>
+              <input type="text" name="username" id="username" required="username" placeholder="username">
+         	 </div><br>
+
+         	 <div>
+              <label for="email">email</label><br>
+              <input type="email" name="email" id="email" required="email" placeholder="e.g. yourname@gmail.com">
+         	 </div><br>
+
+         	 <div>
+              <label for="password">password</label><br>
+              <input type="password" name="password" id="password" required="password" placeholder="type password" onkeyup="CheckPassword(pass.value)">
+         	 </div><strong id="passwordStrength"></strong><br>
+
+         	 <div>
+              <label for="password again">password again</label><br>
+              <input type="password" name="password_again" id="password_again" required="password_again" placeholder="retype password">
+         	 </div><strong id="passwordConfirm"></strong><br>
+
+         	 <div>
+              <label for="gender">Gender:</label>
+              male<input type="radio" value="male" name="gender" id="gender" required="gender"> 
+              female<input type="radio" value="female" name="gender" id="gender" required="gender"><br><br>
+             </div><br>
+
+             <div>
+         	 <label for="info">Tell us a little about yourself</label><br>
+        	 <textarea name="info" id="info" required="info" rows="15" cols="50" maxlength="120" placeholder="">
+	     	 </textarea>
+         	 </div><br>
+
+          	<input type="submit" name="submit" id="sub">
+
+          	</form>
+		</section>
+
+		<footer>
+				<a href="http://www.andela.com"> &copy; Andela.com </a>
+		</footer>
+
+
+		</div>
+
+
+		<script src="js/passwordStrength.js"></script>
+
+</body>
+</html>
