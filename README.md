@@ -1,2 +1,2 @@
 # UI
-User Interface templates for StackOverflow-Lite platform
+API endpoints for the UI templates created
