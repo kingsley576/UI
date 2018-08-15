@@ -1,0 +1,19 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "api-endpoints for the User Interface Templates created",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kingsley576/UI.git"
+  },
+  "author": "Obioha Kingsley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kingsley576/UI/issues"
+  },
+  "homepage": "https://github.com/Kingsley576/UI#readme"
+}
