@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 
 const indexVersion1 = require('./routes/index');
 const questionVersion1 = require('./routes/question');
+const answer = require('./routes/answer');
 
 
 app.use(morgan('dev'));
@@ -26,6 +27,7 @@ if (req.method === 'OPTIONS') {
 // Routes for handling requests
 app.use('/index/v1', indexVersion1);
 app.use('/question/v1', questionVersion1);
+app.use('/answer', answer);
 
 app.use((req, res, next) => {
   const error = new Error('Not Found');
