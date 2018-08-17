@@ -11,4 +11,17 @@ exports.GetOneQuestion = (req, res, next) => {
 }
 }
 
-exports.PostAnAnswer = ()
+exports.PostAnAnswer = (req, res, next) => {
+	const ansr = {
+      username: req.body.username,
+      gender: req.body.gender,
+      id: req.body.id,
+      answer: req.body.answer
+
+  };
+  res.status(201).json({
+    message: "POSTED AN ANSWER",
+    question: qs.categories[2].question,
+    answer: ansr.answer
+  });
+}
