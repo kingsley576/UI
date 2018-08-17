@@ -6,6 +6,6 @@ const indexController = require('../controllers/answer');
 
 router.get('/:questionId', indexController.GetOneQuestion);
 
-router.get('/:answer', indexController.PostAnAnswer);
+router.post('/', indexController.PostAnAnswer);
 
 module.exports = router;
