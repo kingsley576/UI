@@ -1,14 +1,14 @@
 exports.postQuestion = (req, res, next) => {
   const qstn = {
-      username: req.body.username,
-      gender: req.body.gender,
-      id: req.body.id,
-      title: req.body.title,
-      question: req.body.question
+    username: req.body.username,
+    gender: req.body.gender,
+    id: req.body.id,
+    title: req.body.title,
+    question: req.body.question
 
   };
   res.status(201).json({
-    message: "POSTED A QUESTION",
+    message: 'POSTED A QUESTION',
     question: qstn
   });
-}
+};
