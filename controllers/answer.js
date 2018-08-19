@@ -1,6 +1,5 @@
-const qs = require('../questions.json');
-
-exports.GetOneQuestion = (req, res, next) => {
+const qsController = function(qs) {
+  const GetOneQuestion = (req, res, next) => {
   var id = req.params.questionId;
   for (var i = 0; i < qs.categories.length; i += 1) {
     if (id === qs.categories[i].id) {
@@ -11,7 +10,7 @@ exports.GetOneQuestion = (req, res, next) => {
   }
 };
 
-exports.PostAnAnswer = (req, res, next) => {
+const PostAnAnswer = (req, res, next) => {
   const ansr = {
     username: req.body.username,
     gender: req.body.gender,
@@ -24,4 +23,13 @@ exports.PostAnAnswer = (req, res, next) => {
     question: qs.categories[2].question,
     answer: ansr.answer
   });
+ };
+    return {
+        GetOneQuestion: GetOneQuestion,
+        PostAnAnswer: PostAnAnswer
+    }
+
 };
+
+module.exports = qsController;
+
