@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const qs = require('../questions.json');
 
-const indexController = require('../controllers/answer')(qs);
+const indexController = require('../controllers/answer');
 
 router.get('/:questionId', indexController.GetOneQuestion);
 
