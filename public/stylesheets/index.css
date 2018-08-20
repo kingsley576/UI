@@ -1,5 +1,5 @@
 body {
-		background-image: url("../images/question.jpg");
+		background-image: url("../images/ask2.jpg");
 		color: #fff;
 		font-family: 'Nunito Semibold';
 		text-align: center;
@@ -25,7 +25,7 @@ body {
 		}
 
 #content header {
-				background: #008aff;
+				background: ;
 				padding: 30px;
 				opacity: ;
 }
@@ -63,7 +63,6 @@ header ul li a {
 	word-spacing: 10px;
 }
 header ul li {
-	text-decoration: none;
 	list-style-type: none;
 	display: inline;
 }
@@ -106,56 +105,60 @@ button {
     font-size: 20px;
 }
 button:hover {
-	background: #00a37a;
+	background: ;
 }
 
 
 #home {
-	background: salmon;
+	background: ;
 	border-radius: 10px;
 	padding: 10px;
+	color: white;
 }
 #home:hover {
-	background: #3bbced;
-	border-radius: 10px;
-	padding: 20px;
+	background: ;
+	border-radius: ;
+	padding: ;
 }
 
 
 #log {
 	padding: 10px;
+	color: white;
 }
 #log:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
 }
 
 #about {
 	padding: 10px;
+	color: white;
 }
 #about:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	padding: ;
+	border-radius: ;
 }
 
 #contact {
 	padding: 10px;
+	color: white;
 }
 #contact:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
 }
 
 #sign {
 	padding: 10px;
+	color: white;
 }
 #sign:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
 }
 
 #quote {
