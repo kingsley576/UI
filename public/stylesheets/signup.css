@@ -28,10 +28,10 @@ body {
 #content header {
 				background: ;
 				padding: 30px;
-				opacity: 0.9;
+				opacity: ;
 }
 #content section {
-				background: #00a37a;
+				background: black;
 				padding-bottom: 20px;
 				opacity: 0.9;
 }
@@ -115,9 +115,10 @@ button:hover {
 	padding: 10px;
 }
 #home:hover {
-	background: #3bbced;
-	border-radius: 10px;
-	padding: 20px;
+	background: ;
+	border-radius: ;
+	padding: ;
+	text-decoration: underline;
 }
 
 
@@ -125,36 +126,40 @@ button:hover {
 	padding: 10px;
 }
 #log:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #about {
 	padding: 10px;
 }
 #about:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #contact {
 	padding: 10px;
 }
 #contact:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #sign {
-	background: salmon;
-	border-radius: 10px;
+	background: ;
+	border-radius: ;
 	padding: 10px;
 }
 #sign:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }

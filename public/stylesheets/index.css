@@ -119,6 +119,7 @@ button:hover {
 	background: ;
 	border-radius: ;
 	padding: ;
+	text-decoration: underline;
 }
 
 
@@ -130,6 +131,7 @@ button:hover {
 	background: ;
 	padding: ;
 	border-radius: ;
+	text-decoration: underline;
 }
 
 #about {
@@ -139,6 +141,7 @@ button:hover {
 #about:hover {
 	padding: ;
 	border-radius: ;
+	text-decoration: underline;
 }
 
 #contact {
@@ -149,6 +152,7 @@ button:hover {
 	background: ;
 	padding: ;
 	border-radius: ;
+	text-decoration: underline;
 }
 
 #sign {
@@ -159,6 +163,7 @@ button:hover {
 	background: ;
 	padding: ;
 	border-radius: ;
+	text-decoration: underline;
 }
 
 #quote {

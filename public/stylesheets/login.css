@@ -76,7 +76,7 @@ header ul li {
 	font-size: 30px;
 }
 #hea_der a {
-	color: indigo;
+	color: black;
 }
 
 section {
@@ -89,6 +89,7 @@ footer {
 }
 footer a {
 	text-decoration: none;
+	color: black;
 }
 footer a:hover {
 	background: #00a37a
@@ -113,48 +114,58 @@ button:hover {
 
 #home {
 	padding: 10px;
+	color: black;
 }
 #home:hover {
-	background: #3bbced;
-	border-radius: 10px;
-	padding: 20px;
+	background: ;
+	border-radius: ;
+	padding: ;
+	text-decoration: underline;
 }
 
 
 #log {
-	background: salmon;
-	border-radius: 10px;
-	padding: 10px;
+	background: ;
+	border-radius: ;
+	padding: ;
+	color: black;
 }
 #log:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #about {
 	padding: 10px;
+	color: black;
 }
 #about:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #contact {
 	padding: 10px;
+	color: black;
 }
 #contact:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #sign {
 	padding: 10px;
+	color: black;
 }
 #sign:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
