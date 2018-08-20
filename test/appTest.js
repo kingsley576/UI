@@ -7,11 +7,33 @@ const should = chai.should();
 chai.use(chaiHttp);
 
 describe('indexGetAll', function() {
-  it('should list ALL questions on /index/v1 GET', function(done) {
+  it('should list ALL questions on /index/v1 GET', (done) => {
   chai.request(app)
     .get('/index/v1')
     .end(function(err, res){
       res.should.have.status(200);
+      done();
+    });
+});
+});
+
+describe('postQuestion', function() {
+  it('should POST questions on /question/v1 POST', (done) => {
+
+  	const qstn = {
+      username: "kingsley",
+      gender: "male",
+      id: 8,
+      title: "cars",
+      question: "fastest cars"
+
+  }
+
+  chai.request(app)
+    .post('/question/v1')
+    .send(qstn)
+    .end((err, res) => {
+	      res.should.have.status(201);
       done();
     });
 });
