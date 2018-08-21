@@ -4,9 +4,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
-const indexVersion1 = require('./routes/index');
 const questionVersion1 = require('./routes/question');
-const answer = require('./routes/answer');
 
 
 app.use(morgan('dev'));
@@ -26,9 +24,7 @@ app.use((req, res, next) => {
 });
 
 // Routes for handling requests
-app.use('/index/v1', indexVersion1);
-app.use('/question/v1', questionVersion1);
-app.use('/answer', answer);
+app.use('/api/v1/questions', questionVersion1);
 
 app.use((req, res, next) => {
   const error = new Error('Not Found');
