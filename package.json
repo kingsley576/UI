@@ -5,29 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha || true",
-    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha --compilers js:babel-core/register --exit",
     "build": "babel --presets env src -d dist",
-    "coveralls": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls"
+    "coverage": "npm test && nyc report --reporter=text-lcov || coveralls",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov || coveralls"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kingsley576/UI.git"
-  },
-  "nyc": {
-    "exclude": [
-      "**/controllers/**",
-      "**/model/**",
-      "client"
-    ],
-    "require": [
-      "babel-register"
-    ],
-    "reporter": [
-      "lcov",
-      "text"
-    ],
-    "sourceMap": false,
-    "instrument": false
   },
   "author": "Obioha Kingsley",
   "license": "ISC",
