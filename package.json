@@ -4,12 +4,26 @@
   "description": "api-endpoints for the User Interface Templates created",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true",
-    "build": "babel --presets env src -d dist"
+    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha --compilers js:babel-core/register --exit",
+    "build": "babel --presets env src -d dist",
+    "coveralls": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kingsley576/UI.git"
+  },
+  "nyc": {
+    "exclude": [
+      "**/controllers/**",
+      "**/model/**",
+      "client"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "sourceMap": false,
+    "instrument": false
   },
   "author": "Obioha Kingsley",
   "license": "ISC",
@@ -28,13 +42,17 @@
     "chai": "^3.2.0",
     "chai-http": "^1.0.0",
     "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
     "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.1",
     "eslint-plugin-react": "^7.4.0",
+    "istanbul": "^0.4.5",
+    "jasmine-node": "^1.15.0",
     "mocha": "^5.2.0",
     "mocha-lcov-reporter": "^1.3.0",
-     "jasmine-node": "^1.15.0"
+    "nyc": "^12.0.2",
+    "supertest": "^3.1.0"
   }
 }
