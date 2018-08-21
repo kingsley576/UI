@@ -12,3 +12,4 @@ exclude_paths:
 - "build/"
 - "node_modules/"
 - ".nyc_output/"
+- "dist/"
