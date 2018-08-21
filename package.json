@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha || true",
-    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha --exit",
+    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha --compilers js:babel-core/register --exit",
     "build": "babel --presets env src -d dist",
-    "coverage": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls",
     "coveralls": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls"
   },
   "repository": {
@@ -19,6 +18,9 @@
       "**/controllers/**",
       "**/model/**",
       "client"
+    ],
+    "require": [
+      "babel-register"
     ],
     "reporter": [
       "lcov",
