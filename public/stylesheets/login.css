@@ -92,7 +92,7 @@ footer a {
 	color: black;
 }
 footer a:hover {
-	background: #00a37a
+	background: ;
 }
 
 
@@ -168,4 +168,16 @@ button:hover {
 	padding: ;
 	border-radius: ;
 	text-decoration: underline;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    background: ;
+    border: 0;
+    font-size: 20px;
+    color: #989898;
+}
+
+input[type="submit"]:hover{
+    color: #00a37a;
 }

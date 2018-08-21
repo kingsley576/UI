@@ -13,12 +13,12 @@ body {
 			margin: 0 auto;
 			grid-template-areas:
 			"header header header header header header"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
+			"section section section section aside aside"
+			"section section section section aside aside"
+			"section section section section aside aside"
+			"section section section section aside aside"
+			"section section section section aside aside"
+			"section section section section aside aside"
 			"footer footer footer footer footer footer"
 			;
 			
@@ -41,6 +41,11 @@ body {
 }
 #content footer {
 				background: grey;
+				padding: 30px;
+				opacity: ;
+}
+#content aside {
+				background: ;
 				padding: 30px;
 				opacity: ;
 }
@@ -85,8 +90,6 @@ header ul li {
 section {
 	grid-area: section;
 }
-
-
 footer {
 	grid-area: footer;
 }
@@ -94,20 +97,11 @@ footer a {
 	text-decoration: none;
 }
 footer a:hover {
-	background: #00a37a
+	background: ;
 }
-
-
-button {
-	padding: 10px;
-    width: 20%;
-    float: right;
-    background: #23282e;
-    border: 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-size: 20px;
+aside {
+	grid-area: aside;
+	color: black;
 }
 button:hover {
 	background: #00a37a;
@@ -179,11 +173,62 @@ button:hover {
 }
 #question ul li {
 	list-style-type: none;
-	text-align: left;
+}
+#recent {
+	color: black;
+}
+#recent ul li {
+	display: inline;
+}
+#recentSpan {
+	font-size: 30px;
+	float: left;
+}
+#sub {
+	padding: 10px;
+    width: 30%;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+#who {
+	float: inherit;
+}
+#postedBy a {
+	text-decoration: none;
+}
+#let {
+	color: #008aff;
+}
+#view {
+	color: #008aff;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+#extra ul li {
+	display: inline;
+	padding: 10px;
+}
+#extra ul li a{
+	display: inline;
+	text-decoration: none;
+}
+#border {
+	border-bottom: #333 1px solid;
 }
 #topic {
 	font-size: 20px;
 	text-decoration: none;
+	float: left;
 }
 p {
 	text-align: left;
@@ -205,4 +250,16 @@ p {
 }
 #submit:hover {
 	background: #00a37a;
+}
+#poster ul li {
+	list-style-type: none;
+	display: inline;
+}
+#postedBy {
+	color: blue;
+}
+#topQ ul li {
+	list-style-type: none;
+	margin-left: 0 auto;
+	
 }

@@ -29,11 +29,12 @@ body {
 				background: ;
 				padding: 30px;
 				opacity: ;
+				background-image: url("../images/ask2.jpg");
 }
 #content section {
-				background: black;
+				background: #008aff;
 				padding-bottom: 20px;
-				opacity: 0.9;
+				opacity: ;
 }
 #content footer {
 				background: ;
@@ -91,7 +92,7 @@ footer a {
 	color: white;
 }
 footer a:hover {
-	background: #00a37a
+	background: ;
 }
 
 
@@ -162,4 +163,15 @@ button:hover {
 	padding: ;
 	border-radius: ;
 	text-decoration: underline;
+}
+input[type="submit"]{
+    padding: 10px;
+    background: ;
+    border: 0;
+    font-size: 20px;
+    color: #989898;
+}
+
+input[type="submit"]:hover{
+    color: #008aff;
 }

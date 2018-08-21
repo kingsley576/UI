@@ -15,10 +15,10 @@ body {
 			"header header header header header header"
 			". . . . . ."
 			". . . . . ."
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
+			". .  section section . ."
+			". .  section section . ."
+			". .  section section . ."
+			". .  section section . ."
 			"footer footer footer footer footer footer"
 			;
 			
@@ -32,7 +32,7 @@ body {
 #content section {
 				background: ;
 				padding: 30px;
-				opacity: ;
+				opacity: 0.9;
 }
 #content footer {
 				background: ;
@@ -86,10 +86,10 @@ footer {
 }
 footer a {
 	text-decoration: none;
-	color: salmon;
+	color: white;
 }
 footer a:hover {
-	background: #00a37a
+	background: ;
 }
 
 
@@ -121,8 +121,6 @@ button:hover {
 	padding: ;
 	text-decoration: underline;
 }
-
-
 #log {
 	padding: 10px;
 	color: white;
@@ -174,4 +172,14 @@ button:hover {
 	margin-top:50px;
 	margin-bottom:50px;
 	text-align:center;
+}
+
+#quoteSpan {
+	padding: 20px;
+    background: grey;
+    border: 0;
+    box-sizing: border-box;
+    color: ;
+    font-size: 20px;
+    border-radius: 30px;
 }

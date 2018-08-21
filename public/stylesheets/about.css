@@ -1,5 +1,5 @@
 body {
-		background-image: url("../images/.jpg");
+		background-image: url("../images/ask2.jpg");
 		color: #fff;
 		font-family: 'Nunito Semibold';
 		text-align: center;
@@ -25,7 +25,7 @@ body {
 		}
 
 #content header {
-				background: #008aff;
+				background: ;
 				padding: 30px;
 				opacity: ;
 }
@@ -93,9 +93,10 @@ footer {
 }
 footer a {
 	text-decoration: none;
+	color: white;
 }
 footer a:hover {
-	background: #00a37a
+	background: ;
 }
 
 
@@ -117,54 +118,64 @@ button:hover {
 
 #home {
 	padding: 10px;
+	color: white;
 }
 #home:hover {
-	background: #00a37a;
-	border-radius: 10px;
-	padding: 20px;
+	background: ;
+	border-radius: ;
+	padding: ;
+	text-decoration: underline;
 }
 
 
 #log {
 	padding: 10px;
+	color: white;
 }
 #log:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #about {
-	background: salmon;
-	border-radius: 10px;
-	padding: 10px;
+	background: ;
+	border-radius: ;
+	padding: ;
+	color: white;
 }
 #about:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #contact {
 	padding: 10px;
+	color: white;
 }
 #contact:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #sign {
 	padding: 10px;
+	color: white;
 }
 #sign:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #writing {
-	color: #000;
+	color: white;
 	text-align: left;
 	font-size: 20px;
 }
