@@ -1,0 +1,41 @@
+{
+  "categoryName": "Questions",
+  "categories": [
+    {
+      "username": "Kingsley",
+      "gender": "Male",
+      "id": "1",
+      "title": "Installing FIFA 19",
+      "question": "How do I install FIFA 19 on my PC?."
+    },
+    {
+      "username": "Ijeoma",
+      "gender": "Female",
+      "id": "2",
+      "title": "Difference between SQL and NOSQL",
+      "question": "Please can someone explain the difference between SQL and NOSQL for me."
+    },
+    {
+      "username": "Michael",
+      "gender": "Male",
+      "id": "3",
+      "title": "Jumpstarting a car",
+      "question": "What is the easiest way to jumpstart a car?."
+    },
+    {
+      "username": "Emma",
+      "gender": "Male",
+      "id": "4",
+      "title": "Programming Language",
+      "question": "What Programming Language do you suggest I start with as a newbie?."
+    },
+    {
+      "username": "Augusta",
+      "gender": "Male",
+      "id": "5",
+      "title": "V8 engine",
+      "question": "What does V8 engine in a car mean?."
+    }
+              
+            ]
+}
