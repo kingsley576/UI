@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel --presets env src -d dist",
+    "coverage": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls",
     "coveralls": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls"
   },
   "repository": {
