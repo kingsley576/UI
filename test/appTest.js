@@ -6,10 +6,10 @@ const app = require('../app');
 const should = chai.should();
 chai.use(chaiHttp);
 
-describe('indexGetAll', () => {
-  it('should list ALL questions on /index/v1 GET', (done) => {
+describe('questionGetAll', () => {
+  it('should list ALL questions on /api/v1/questions GET', (done) => {
     chai.request(app)
-      .get('/index/v1')
+      .get('/api/v1/questions')
       .end((err, res) => {
         res.should.have.status(200);
         done();
@@ -17,8 +17,28 @@ describe('indexGetAll', () => {
   });
 });
 
+describe('GetOneQuestion', () => {
+  it('should GET one question', (done) => {
+	  	const qstn = { 
+	  		username: 'Ijeoma',
+		    gender: 'Female',
+		    id: '2',
+		    title: 'Difference between SQL and NOSQL',
+		    question: 'Please can someone explain the difference between SQL and NOSQL for me.'
+	  	};
+  		chai.request(app)
+    	.get('/api/v1/questions/questionId' + qstn.id)
+    	.send(qstn)
+    	.end((err, res) => {
+      	res.should.have.status(200);
+        done();
+    	});
+    	done();
+  });
+});
+
 describe('postQuestion', () => {
-  it('should POST questions on /question/v1 POST', (done) => {
+  it('should POST questions on /api/v1/questions POST', (done) => {
   	const qstn = {
       username: 'kingsley',
       gender: 'male',
@@ -29,7 +49,7 @@ describe('postQuestion', () => {
     };
 
     chai.request(app)
-      .post('/question/v1')
+      .post('/api/v1/questions')
     .send(qstn)
       .end((err, res) => {
 	      res.should.have.status(201);
@@ -48,7 +68,7 @@ describe('PostAnAnswer', () => {
 
 	  };
     chai.request(app)
-      .post('/answer')
+      .post('/api/v1/questions/questionId/answer')
       .send(ansr)
       .end((err, res) => {
         res.should.have.status(201);
@@ -58,23 +78,3 @@ describe('PostAnAnswer', () => {
       });
   });
 });
-
-describe('GetOneQuestion', () => {
-  it('should GET one question', (done) => {
-	  	const qstn = { 
-	  		username: 'Ijeoma',
-		    gender: 'Female',
-		    id: '2',
-		    title: 'Difference between SQL and NOSQL',
-		    question: 'Please can someone explain the difference between SQL and NOSQL for me.'
-	  	};
-  		chai.request(app)
-    	.get('/answer/' + qstn.id)
-    	.send(qstn)
-    	.end((err, res) => {
-      	res.should.have.status(200);
-        done();
-    	});
-  });
-  	});
-
