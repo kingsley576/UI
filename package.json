@@ -4,7 +4,8 @@
   "description": "api-endpoints for the User Interface Templates created",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || test",
+    "test": "mocha || true",
+    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha --compilers js:babel-core/register --exit",
     "build": "babel --presets env src -d dist",
     "coverage": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls",
     "coveralls": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls"
@@ -18,6 +19,9 @@
       "**/controllers/**",
       "**/model/**",
       "client"
+    ],
+    "require": [
+      "babel-register"
     ],
     "reporter": [
       "lcov",
@@ -39,9 +43,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
     "chai": "^3.2.0",
     "chai-http": "^1.0.0",
     "coveralls": "^3.0.2",
