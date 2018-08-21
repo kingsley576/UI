@@ -4,7 +4,6 @@
   "description": "api-endpoints for the User Interface Templates created",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha --compilers js:babel-core/register --exit",
     "build": "babel --presets env src -d dist",
     "coveralls": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls"
   },
