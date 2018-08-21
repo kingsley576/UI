@@ -19,9 +19,6 @@
       "**/model/**",
       "client"
     ],
-    "require": [
-      "babel-register"
-    ],
     "reporter": [
       "lcov",
       "text"
