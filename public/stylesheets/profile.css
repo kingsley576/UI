@@ -1,5 +1,5 @@
 body {
-		background-image: url("images/grin.jpg");
+		background-image: url("");
 		color: #fff;
 		font-family: 'Nunito Semibold';
 		text-align: center;
@@ -30,7 +30,7 @@ body {
 				opacity: ;
 }
 #content section {
-				background: #008080;
+				background: #f4f4f4;
 				padding: 30px;
 				opacity: ;
 }
@@ -45,7 +45,7 @@ body {
 				opacity: ;
 }
 #content aside {
-				background: #3D9970;
+				background: ;
 				padding: 30px;
 				opacity: ;
 }
@@ -267,6 +267,9 @@ p {
 	list-style-type: none;
 	float: left;
 	
+}
+#topQ ul li a {
+	text-decoration: none;
 }
 #topQ h2 {
 	margin-right: 200px;
