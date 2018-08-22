@@ -13,12 +13,12 @@ body {
 			margin: 0 auto;
 			grid-template-areas:
 			"header header header header header header"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
-			"section section section section section section"
+			"section section section section aside aside"
+			"section section section section aside aside"
+			"section section section section aside aside"
+			"section section section section aside aside"
+			"section section section section aside aside"
+			"section section section section aside aside"
 			"footer footer footer footer footer footer"
 			;
 			
@@ -30,12 +30,22 @@ body {
 				opacity: ;
 }
 #content section {
-				background: ;
+				background: #008080;
+				padding: 30px;
+				opacity: ;
+}
+#content nav {
+				background: indigo;
 				padding: 30px;
 				opacity: ;
 }
 #content footer {
 				background: grey;
+				padding: 30px;
+				opacity: ;
+}
+#content aside {
+				background: #3D9970;
 				padding: 30px;
 				opacity: ;
 }
@@ -79,9 +89,8 @@ header ul li {
 
 section {
 	grid-area: section;
+	color: black;
 }
-
-
 footer {
 	grid-area: footer;
 }
@@ -92,18 +101,9 @@ footer a {
 footer a:hover {
 	background: ;
 }
-
-
-button {
-	padding: 10px;
-    width: 20%;
-    float: right;
-    background: #23282e;
-    border: 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-size: 20px;
+aside {
+	grid-area: aside;
+	color: black;
 }
 button:hover {
 	background: #00a37a;
@@ -168,23 +168,140 @@ button:hover {
 	border-radius: ;
 	text-decoration: underline;
 }
+
+#question {
+	color: #000;
+	border: red;
+}
+#question ul li {
+	list-style-type: none;
+}
+#recent {
+	color: black;
+}
+#recent ul li {
+	display: inline;
+}
+#recentSpan {
+	font-size: 30px;
+	float: left;
+}
+#sub {
+	padding: 10px;
+    width: 30%;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+#who {
+	float: inherit;
+}
+#postedBy a {
+	text-decoration: none;
+}
+#let {
+	color: #008aff;
+}
 #view {
+	color: #008aff;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+#extra ul li {
+	display: inline;
+	padding: 10px;
+}
+#extra ul li a{
+	display: inline;
+	text-decoration: none;
+}
+#border {
+	border-bottom: #333 1px solid;
+}
+#topic {
 	font-size: 20px;
-	left:550px;
-	width:300px;
-	height:580px;
+	text-decoration: none;
+	float: left;
+}
+p {
+	text-align: left;
+}
+#info {
+	float: center;
+}
+#strong {
+	color: #000;
+	margin-left: -560px;
+	font-size: 30px;
+}
+#submit {
+	padding: 10px;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 640px;
+}
+#submit:hover {
+	background: #008aff;
+}
+#poster ul li {
+	list-style-type: none;
+	display: inline;
+}
+#postedBy {
+	color: blue;
+}
+#topQ ul li {
+	list-style-type: none;
+	float: left;
+	
+}
+#topQ h2 {
+	margin-right: 200px;
+}
+#quest {
+	font-size: 15px;
+	left:200px;
+	width:500px;
+	height:20px;
 	margin-top:50px;
 	margin-bottom:50px;
-	text-align:center;
+	margin-left: 40px;
+	text-align: left;
 }
-
-#image {
-    left:25px;
-    top:-70px;
-    width:250px;
-
+#para {
+	color: black;
+	text-align: justify;
 }
-
-input[type=file]{
-padding:10px;
-background:#2d2d2d;}
+#comment {
+	color: black;
+	margin-left: -680px;
+}
+textarea {
+	resize: none;
+	text-align: left;
+}
+#bio ul li {
+	text-align: left;
+	list-style-type: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+img {
+	border-radius: 50px;
+}
+#rec {
+	font-size: 30px;
+}
