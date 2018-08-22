@@ -28,7 +28,7 @@ body {
 		}
 
 #content header {
-				background: #f4f4f4;
+				background: #008aff;
 				padding: 30px;
 				opacity: ;
 }
@@ -105,70 +105,78 @@ footer a:hover {
 button {
 	padding: 10px;
     width: 20%;
-    float: right;
     background: #23282e;
     border: 0;
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
     font-size: 20px;
+    margin-left: 820px;
 }
 button:hover {
-	background: #00a37a;
+	background: #008aff;
 }
 
 
 #home {
+	background: ;
+	border-radius: 10px;
 	padding: 10px;
+	color: white;
 }
 #home:hover {
-	background: #00a37a;
-	border-radius: 10px;
-	padding: 20px;
+	background: ;
+	border-radius: ;
+	padding: ;
+	text-decoration: underline;
 }
 
 
 #log {
 	padding: 10px;
+	color: white;
 }
 #log:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #about {
 	padding: 10px;
+	color: white;
+	color: white;
 }
 #about:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #contact {
 	padding: 10px;
+	color: white;
 }
 #contact:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
-}
-
-#sign {
-	padding: 10px;
-}
-#sign:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
 }
 
 #profile {
 	padding: 10px;
+	color: white;
 }
 #profile:hover {
-	background: #00a37a;
-	padding: 20px;
-	border-radius: 10px;
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+textarea {
+	resize: none;
 }
