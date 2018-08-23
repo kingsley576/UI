@@ -175,3 +175,6 @@ input[type="submit"]{
 input[type="submit"]:hover{
     color: #008aff;
 }
+textarea {
+	resize: none;
+}
