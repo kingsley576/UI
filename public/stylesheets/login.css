@@ -1,0 +1,196 @@
+body {
+		background-image: url("../images/ask1.jpg");
+		color: #fff;
+		font-family: 'Nunito Semibold';
+		text-align: center;
+		}
+		
+#content {
+			display: grid;
+			grid-template-column: repeat(6, 1fr);
+			grid-auto-rows: 60px;
+			max-width: none;
+			margin: 0 auto;
+			grid-template-areas:
+			"header header header header header header"
+			". . . . . ."
+			". . section section . ."
+			". . section section . ."
+			". . section section . ."
+			". . section section . ."
+			". . section section . ."
+			". . section section . ."
+			". . . . . ."
+			"footer footer footer footer footer footer"
+			;
+			
+		}
+
+#content header {
+				background: ;
+				padding: 30px;
+				opacity: ;
+}
+#content section {
+				background: #008080;
+				padding: 30px;
+				opacity: 0.9;
+}
+#content footer {
+				background: ;
+				padding: 30px;
+				opacity: ;
+}
+
+
+header {
+	grid-area: header;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	list-style-type: none;
+	display: inline;
+}
+header ul #hea_der {
+	display: inline;
+	list-style-type: none;
+}
+header ul #head_er {
+	float: right;
+	list-style-type: none;
+}
+header ul li a {
+	text-decoration: none;
+	word-spacing: 10px;
+}
+header ul li {
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+}
+#hea_der {
+	float: left;
+	margin-top: -10px;
+	margin-left: 100px;
+	font-size: 30px;
+}
+#hea_der a {
+	color: black;
+}
+
+section {
+	grid-area: section;
+}
+
+
+footer {
+	grid-area: footer;
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
+footer a:hover {
+	background: ;
+}
+
+
+button {
+	padding: 10px;
+    width: 20%;
+    float: right;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+button:hover {
+	background: #00a37a;
+}
+
+
+#home {
+	padding: 10px;
+	color: black;
+}
+#home:hover {
+	background: ;
+	border-radius: ;
+	padding: ;
+	text-decoration: underline;
+}
+
+
+#log {
+	background: ;
+	border-radius: ;
+	padding: ;
+	color: black;
+}
+#log:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#about {
+	padding: 10px;
+	color: black;
+}
+#about:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#contact {
+	padding: 10px;
+	color: black;
+}
+#contact:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#sign {
+	padding: 10px;
+	color: black;
+}
+#sign:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    background: ;
+    border: 0;
+    font-size: 20px;
+    color: #989898;
+}
+
+input[type="submit"]:hover{
+    color: #00a37a;
+}
+span.fgt {
+    float: center;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+}
+#fgtp {
+	
+}
+#fgtp a {
+	text-decoration: none;
+	color: black;
+}

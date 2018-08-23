@@ -1,0 +1,206 @@
+body {
+		background-image: url("../images/ask2.jpg");
+		color: #fff;
+		font-family: 'Nunito Semibold';
+		text-align: center;
+		}
+
+#content {
+			display: grid;
+			grid-template-column: repeat(6, 1fr);
+			grid-auto-rows: 75px;
+			max-width: none;
+			margin: 0 auto;
+			grid-template-areas:
+			"header header header header header header"
+			". . . . . ."
+			". . . . . ."
+			". .  section section . ."
+			". .  section section . ."
+			". .  section section . ."
+			". .  section section . ."
+			"footer footer footer footer footer footer"
+			;
+			
+		}
+		
+@media screen and (max-width: 320px) {		
+#content {
+			display: grid;
+			grid-template-column: repeat(6, 1fr);
+			grid-auto-rows: 75px;
+			max-width: none;
+			margin: 0 auto;
+			grid-template-areas:
+			"header header header header header header"
+			". . . . . ."
+			". . . . . ."
+			". .  section section . ."
+			". .  section section . ."
+			". .  section section . ."
+			". .  section section . ."
+			"footer footer footer footer footer footer"
+			;
+			
+		}
+		}
+
+#content header {
+				background: ;
+				padding: 30px;
+				opacity: ;
+}
+#content section {
+				background: ;
+				padding: 30px;
+				opacity: 0.9;
+}
+#content footer {
+				background: ;
+				padding: 30px;
+				opacity: ;
+}
+
+
+header {
+	grid-area: header;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	list-style-type: none;
+	display: inline;
+}
+header ul #hea_der {
+	display: inline;
+	list-style-type: none;
+}
+header ul #head_er {
+	float: right;
+	list-style-type: none;
+}
+header ul li a {
+	text-decoration: none;
+	word-spacing: 10px;
+}
+header ul li {
+	list-style-type: none;
+	display: inline;
+}
+#hea_der {
+	float: left;
+	margin-top: -10px;
+	margin-left: 100px;
+	font-size: 30px;
+}
+#hea_der a {
+	color: white;
+}
+
+section {
+	grid-area: section;
+}
+
+
+footer {
+	grid-area: footer;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+}
+footer a:hover {
+	background: ;
+}
+
+
+button {
+	padding: 10px;
+    width: 20%;
+    float: right;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+button:hover {
+	background: ;
+}
+
+
+#home {
+	background: ;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+}
+#home:hover {
+	background: ;
+	border-radius: ;
+	padding: ;
+	text-decoration: underline;
+}
+#log {
+	padding: 10px;
+	color: white;
+}
+#log:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#about {
+	padding: 10px;
+	color: white;
+}
+#about:hover {
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#contact {
+	padding: 10px;
+	color: white;
+}
+#contact:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#sign {
+	padding: 10px;
+	color: white;
+}
+#sign:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#quote {
+	font-size: 20px;
+	left:550px;
+	width:300px;
+	height:580px;
+	margin-top:50px;
+	margin-bottom:50px;
+	text-align:center;
+}
+
+#quoteSpan {
+	padding: 20px;
+    background: grey;
+    border: 0;
+    box-sizing: border-box;
+    color: ;
+    font-size: 20px;
+    border-radius: 30px;
+}

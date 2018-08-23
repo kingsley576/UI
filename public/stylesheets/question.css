@@ -1,0 +1,182 @@
+body {
+		background-image: url("images/grin.jpg");
+		color: ;
+		font-family: 'Nunito Semibold';
+		text-align: center;
+		}
+		
+#content {
+			display: grid;
+			grid-template-column: repeat(6, 1fr);
+			grid-auto-rows: 70px;
+			max-width: none;
+			margin: 0 auto;
+			grid-template-areas:
+			"header header header header header header"
+			". . . . . ."
+			"section section section section section section"
+			"section section section section section section"
+			"section section section section section section"
+			"section section section section section section"
+			". . . . . ."
+			". . . . . ."
+			". . . . . ."
+			". . . . . ."
+			"footer footer footer footer footer footer"
+			;
+			
+		}
+
+#content header {
+				background: #008aff;
+				padding: 30px;
+				opacity: ;
+}
+#content section {
+				background: ;
+				padding: 30px;
+				opacity: ;
+}
+#content nav {
+				background: indigo;
+				padding: 30px;
+				opacity: ;
+}
+#content footer {
+				background: grey;
+				padding: 30px;
+				opacity: ;
+}
+
+
+header {
+	grid-area: header;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	list-style-type: none;
+	display: inline;
+}
+header ul #hea_der {
+	display: inline;
+	list-style-type: none;
+}
+header ul #head_er {
+	float: right;
+	list-style-type: none;
+}
+header ul li a {
+	text-decoration: none;
+	word-spacing: 10px;
+}
+header ul li {
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+}
+#hea_der {
+	float: left;
+	margin-top: -10px;
+	margin-left: 100px;
+	font-size: 30px;
+}
+#hea_der a {
+	color: white;
+}
+
+section {
+	grid-area: section;
+	text-align: center;
+}
+
+
+footer {
+	grid-area: footer;
+}
+footer a {
+	text-decoration: none;
+}
+footer a:hover {
+	background: #00a37a
+}
+
+
+button {
+	padding: 10px;
+    width: 20%;
+    background: #23282e;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 820px;
+}
+button:hover {
+	background: #008aff;
+}
+
+
+#home {
+	background: ;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+}
+#home:hover {
+	background: ;
+	border-radius: ;
+	padding: ;
+	text-decoration: underline;
+}
+
+
+#log {
+	padding: 10px;
+	color: white;
+}
+#log:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#about {
+	padding: 10px;
+	color: white;
+	color: white;
+}
+#about:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#contact {
+	padding: 10px;
+	color: white;
+}
+#contact:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+#profile {
+	padding: 10px;
+	color: white;
+}
+#profile:hover {
+	background: ;
+	padding: ;
+	border-radius: ;
+	text-decoration: underline;
+}
+
+textarea {
+	resize: none;
+}
