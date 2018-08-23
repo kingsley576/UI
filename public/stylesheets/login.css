@@ -181,3 +181,16 @@ input[type="submit"]{
 input[type="submit"]:hover{
     color: #00a37a;
 }
+span.fgt {
+    float: center;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+}
+#fgtp {
+	
+}
+#fgtp a {
+	text-decoration: none;
+	color: black;
+}
