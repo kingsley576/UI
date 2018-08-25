@@ -36,3 +36,24 @@ describe('GetOneQuestion', () => {
       done();
   });
 });
+
+describe('postQuestion', () => {
+  it('should POST questions on /api/v1/questions POST', (done) => {
+    const qstn = {
+      username: 'kingsley',
+      gender: 'male',
+      id: 8,
+      title: 'cars',
+      question: 'fastest cars'
+
+    };
+
+    chai.request(app)
+      .post('/api/v1/questions')
+      .send(qstn)
+      .end((err, res) => {
+     res.should.have.status(201);
+        done();
+      });
+  });
+});
