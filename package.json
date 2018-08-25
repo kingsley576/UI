@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha || true",
-    "coveralls": "nyc report --reporter=lcov | coveralls",
+    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha --compilers js:babel-core/register --exit",
+    "coveralls": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls",
     "build": "babel --presets env src -d dist"
   },
   "repository": {

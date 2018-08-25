@@ -57,3 +57,24 @@ describe('postQuestion', () => {
       });
   });
 });
+
+describe('PostAnAnswer', () => {
+  it('should POST an answer to a question', (done) => {   
+    const ansr = {
+        username: 'Michael',
+        gender: 'Male',
+        id: 9,
+        answer: 'Bugatti'
+
+    };
+    chai.request(app)
+      .post('/api/v1/questions/questionId/answer')
+      .send(ansr)
+      .end((err, res) => {
+        res.should.have.status(201);
+        res.body.should.have.property('question');
+        res.body.should.have.property('answer');
+        done();
+      });
+  });
+});
