@@ -4,5 +4,5 @@ env:
 language: node_js
 node_js:
   - node
-after_success:
+before_success:
   - npm run coveralls
