@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha || true",
-    "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text mocha --compilers js:babel-core/register --exit",
-    "coveralls": "nyc npm test && nyc report --reporter=lcov --reporter=text --reporter=lcovonly || coveralls",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "build": "babel --presets env src -d dist"
   },
   "repository": {
@@ -15,22 +14,6 @@
   },
   "engines": {
     "node": "8.11.2"
-  },
-  "nyc": {
-    "exclude": [
-      "**/controllers/**",
-      "**/model/**",
-      "client"
-    ],
-    "require": [
-      "babel-register"
-    ],
-    "reporter": [
-      "lcov",
-      "text"
-    ],
-    "sourceMap": false,
-    "instrument": false
   },
   "author": "Obioha Kingsley",
   "license": "ISC",
