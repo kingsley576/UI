@@ -3,10 +3,8 @@
     "env"
   ],
   "env": {
-      "test": {
-        "plugins": [
-          "istanbul"
-        ]
-      }
+    "test": {
+      "plugins": [ "istanbul" ]
     }
+  }
 }
