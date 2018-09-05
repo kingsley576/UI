@@ -3,6 +3,8 @@ env:
     - CC_TEST_REPORTER_ID=8a372b2c6b567f3b4eba585b187360aa79e1825d548122e572212624b32990df
 language: node_js
 node_js:
-  - node
-before_success:
-  - npm run coveralls
+  - 8.11.2
+notifications:
+  email: false
+after_success:
+  npm run coverage  

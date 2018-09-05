@@ -4,8 +4,8 @@
   "description": "api-endpoints for the User Interface Templates created",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true",
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "build": "babel --presets env src -d dist"
   },
   "repository": {
